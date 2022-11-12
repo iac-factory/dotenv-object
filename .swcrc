@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json.schemastore.org/swcrc",
+    "test": ".*\\.ts$",
+    "minify": false,
+    "sourceMaps": true,
+    "inlineSourcesContent": false,
+    "emitSourceMapColumns": true,
+    "module": {
+        "type": "commonjs",
+        "strict": false,
+        "strictMode": true,
+        "lazy": false,
+        "noInterop": false,
+        "ignoreDynamic": true
+    },
+    "jsc": {
+        "target": "es2022",
+        "parser": {
+            "syntax": "typescript",
+            "dts": true,
+            "decorators": false,
+            "dynamicImport": true,
+            "exportDefaultFrom": true
+        },
+        "externalHelpers": false,
+        "loose": true,
+        "transform": null
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
